@@ -128,10 +128,12 @@
   
   <form id="pizzaOrder">
   
-  <label for="size">Choose Pizza Size</label>
-  
+  <label for="size"> Pizza Size</label>
+
   <select class="form-control" id="size">
-  
+
+  <option value="0" selected></option>
+
   <option value = 600>Small:ksh 600</option>
   
   <option value = 900>Medium:ksh 900</option>
@@ -143,6 +145,106 @@
   </select>
 
 </div>
+<div class="Crust">
+  
+  <div class= "form-group">
+  
+  <form id="pizzaCrust">
+
+  <label for="crust">Crust</label>
+  
+  <select class="form-control" id="size">
+    
+    <option value="0" selected></option>
+  
+  <option value = 80>Deep-pan:ksh 80</option>
+  
+  <option value = 100>Cheesycrust:ksh 100</option>
+  
+  <option value = 120>Glutten Free Base:ksh 120</option>
+  
+  <option value = 140>Thin 'n' Crispy:ksh 140</option>
+
+  <option value = 160>Classic Crust:ksh 160</option>
+
+  
+  </select>
+
+</div>
+
+<div class="Toppings">
+  
+  <div class= "form-group">
+  
+  <form id="toppings">
+
+  <label for="toppings"> Toppings</label>
+  
+  <select class="form-control" id="size">
+
+    <option value="0" selected></option>
+  
+  <option value = 50>Pepperoni:ksh 50</option>
+  
+  <option value = 70>Mushrooms.:ksh 70</option>
+  
+  <option value = 90>Onions.:ksh 90</option>
+  
+  <option value = 110>Sausage.:ksh 110</option>
+
+  <option value = 130>Bacon.:ksh 130</option>
+
+  <option value = 150>Extra cheese..:ksh 150</option>
+
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="number">Number of pizzas you would like</label>
+  <option value="0" selected></option>
+
+  <input
+    required
+    id="pizzaNumber"
+    type="number"
+    placeholder="Enter the number of pizzas"
+    class="form-control"
+    id="number"
+  />
+</div>
+<div class="form-group">
+  <label for="number"
+    >For delivery enter your location.</label
+  >
+  <select id="pizzaLocation" class="form-control">
+    <option value="0" selected></option>
+    <option value="100">Central</option>
+    <option value="200">Dagoretti</option>
+    <option value="100">Westlands</option>
+    <option value="100">Embakasi</option>
+    <option value="200">Kasarani</option>
+    <option value="100">Makadara</option>
+    <option value="200">Pumwani</option>
+
+
+  </select>
+</div>
+<button
+  id="submit"
+  type="submit"
+  class="btn btn-default btn-outline-default btn-nav"
+>
+  Order
+</button>
+</form>
+</div>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-5 mt-4 image-div">
+<table
+class="table table-condensed table-bordered shadow-lg table-dark table-hover"
+>
+
 <div class="container-fluid">
 <section id="menu" class="bg-1">
   <h4 class="text-center slideanimate">MENU</h4>
@@ -155,9 +257,33 @@
   <button type="button" data-toggle="modal" onClick="Order">Order</button>
   
   <p><strong>BBQ Chicken.</strong></p>
-  <img src="image/"BBQ Chicken.">
+  <img src="image/BBQ-chicken-crust-pizza-3-500x375.jpg" alt="BBQ Chicken">
   <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 "></article>
   <p data-toggle="tooltip" title="barbeque sauce ,top with chicken, cilantro, pepperoncini peppers, onion, and cheese"></p>
+  <button type="button" data-toggle="modal" onClick="Order">Order</button>
+
+  <p><strong>Bianca.</strong></p>
+  <img src="image/download.jpegbianca" alt="Bianca">
+  <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 "></article>
+  <p data-toggle="tooltip" title=" Cheese, Mozzarella, Tomato sauce"></p>
+  <button type="button" data-toggle="modal" onClick="Order">Order</button>
+
+  <p><strong>Margherita.</strong></p>
+  <img src="image/download.jpeg margherita" alt="Margherita">
+  <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 "></article>
+  <p data-toggle="tooltip" title=" Cheese, Mozzarella, Tomato sauce, Garlic, Basil, Olive oil, Parmigiano-Reggaiano"></p>
+  <button type="button" data-toggle="modal" onClick="Order">Order</button>
+
+  <p><strong>Pesto.</strong></p>
+  <img src="image/download.jpeg pesto" alt="Pesto">
+  <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 "></article>
+  <p data-toggle="tooltip" title=" garlic, European pine nuts, coarse salt, basil leaves, and hard cheese such as Parmigiano-Reggiano"></p>
+  <button type="button" data-toggle="modal" onClick="Order">Order</button>
+
+  <p alt="Boerewors"><strong>Boerewors.</strong></p>
+  <img src="image/download.jpegbor">
+  <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 "></article>
+  <p data-toggle="tooltip" title=" minced beef (sometimes combined with minced pork, lamb, or both) and spices (usually toasted coriander seed, black pepper, nutmeg, cloves"></p>
   <button type="button" data-toggle="modal" onClick="Order">Order</button>
 
   
@@ -176,20 +302,6 @@
   
   
   
-  
-  
-  
-  
-  <div class="menu-item">
-    <h3>Crust</h3>
-    <div class="form-group">
-        <select class="form-control" id="sel1">
-          <option>Original Hand Tossed</option>
-          <option>Thin Crust</option>
-          <option>Deep Pan</option>
-        </select>
-    </div>
-      <button type="submit" class="btn btn-block">ADD 
 
 
 </div>
