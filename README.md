@@ -1,4 +1,4 @@
-# GHANA AKAN NAMES
+# B PIZERIA!
 This is a repository for my pizza website.
 *****
 ##### AUTHOR: Bernice Maina
