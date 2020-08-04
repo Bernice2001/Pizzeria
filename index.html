@@ -109,158 +109,93 @@
   
   </div> 
   
-  <div class="row">
   
-  <h1>Order Yours Now</h1>
-  
-  <div class="col-md-3">
-  
-  <div class="Pizzas" id="leftcolumn">
-  
-  </div>
-  
-  </div>
-  
-  
-  <div class="Pizzas">
-  
-  <div class= "form-group">
-  
-  <form id="pizzaOrder">
-  
-  <label for="size"> Pizza Size</label>
 
-  <select class="form-control" id="size">
+<div class="container">
+    <div class="row" style="background-color:#d7b7bb; height: 100%; width: 100%;">
+        <div class="col-md-4 mx-auto py-2">
+            <form id="myForm" style="background-color: #d7b7bb;">
+                <h2>Place Your Order</h2>
+                <div class="form-group">
+                    <label for="sel1">Select type:</label>
+                    <select class="form-control" id="type">
+                        <option>
+                            <Pizza-hub>
+                                </Piza-hub>
+                        </option>
+                        <option>Calzone</option>
+                        <option>Stromboli</option>
+                        <option>Marinara</option>
+                        <option>Neapolitant</option>
+                        <option>Deep Dish</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select size:</label>
+                    <select class="form-control" id="size">
+                        <option value="1">Large---1000</option>
+                        <option value="2">Medium---800</option>
+                        <option value="3">Small---600</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select crust:</label>
+                    <select class="form-control" id="crust">
+                        <option>Cripsy</option>
+                        <option>Stuffed</option>
+                        <option>Gluten-free</option>
+                        <option>Flatbread</option>
+                        <option>Vegan-Friendly></option>
+                        <option>New-Haven Style</option>
 
-  <option value="0" selected></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select topping:</label>
+                    <select class="form-control" id="top">
+                        <option>Pepperoni</option>
+                        <option>Mushrooms</option>
+                        <option>onions</option>
+                        <option>Sausage</option>
+                        <option>Bacon</option>
+                        <option>Cheese</option>
+                    </select>
+                </div>
+                <div class="form-group" required>
+                    <label for="sel1">Quantity:</label>
+                    <input type="number" id="qty" class="form-control" min="1" required>
+                </div>
+                <div class="form-group" required="">
+                    <label for="sel1">Delivery option:</label>
+                    <select class="form-control" id="pick">
+                        <option value="1">Self pick up</option>
+                        <option value="2">Delivery @ Ksh.300</option>
 
-  <option value = 600>Small:ksh 600</option>
-  
-  <option value = 900>Medium:ksh 900</option>
-  
-  <option value = 1150>Large:ksh 1150</option>
-  
-  <option value = 2000>Extra-large:ksh 2000</option>
-  
-  </select>
+                    </select>
+                </div>
 
+                <div class="form-group">
+
+                    <button type="submit" class="btn btn-danger btn-block">Place an Order</button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
 </div>
-<div class="Crust">
-  
-  <div class= "form-group">
-  
-  <form id="pizzaCrust">
-
-  <label for="crust">Crust</label>
-  
-  <select class="form-control" id="size">
-    
-    <option value="0" selected></option>
-  
-  <option value = 80>Deep-pan:ksh 80</option>
-  
-  <option value = 100>Cheesycrust:ksh 100</option>
-  
-  <option value = 120>Glutten Free Base:ksh 120</option>
-  
-  <option value = 140>Thin 'n' Crispy:ksh 140</option>
-
-  <option value = 160>Classic Crust:ksh 160</option>
-
-  
-  </select>
-
-</div>
-
-<div class="Toppings">
-  
-  <div class= "form-group">
-  
-  <form id="toppings">
-
-  <label for="toppings"> Toppings</label>
-  
-  <select class="form-control" id="size">
-
-    <option value="0" selected></option>
-  
-  <option value = 50>Pepperoni:ksh 50</option>
-  
-  <option value = 70>Mushrooms.:ksh 70</option>
-  
-  <option value = 90>Onions.:ksh 90</option>
-  
-  <option value = 110>Sausage.:ksh 110</option>
-
-  <option value = 130>Bacon.:ksh 130</option>
-
-  <option value = 150>Extra cheese..:ksh 150</option>
-
-  </select>
-</div>
-
-<div class="form-group">
-  <label for="number">Number of pizzas you would like</label>
-  <option value="0" selected></option>
-
-  <input
-    required
-    id="pizzaNumber"
-    type="number"
-    placeholder="Enter the number of pizzas"
-    class="form-control"
-    id="number"
-  />
-</div>
-<div class="form-group">
-  <label for="number"
-    >For delivery enter your location.</label
-  >
-  <select id="pizzaLocation" class="form-control">
-    <option value="0" selected></option>
-    <option value="100">Central</option>
-    <option value="200">Dagoretti</option>
-    <option value="100">Westlands</option>
-    <option value="100">Embakasi</option>
-    <option value="200">Kasarani</option>
-    <option value="100">Makadara</option>
-    <option value="200">Pumwani</option>
-
-
-  </select>
-</div>
-<button
-  id="submit"
-  type="submit"
-  class="btn btn-default btn-outline-default btn-nav"
->
-  Order
-</button>
-</form>
-</div>
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-5 mt-4 image-div">
-<table
-class="table table-condensed table-bordered shadow-lg table-dark table-hover"
->
-<div class="icons">
-  <img src="image/images.jpegig icon" alt="instagram">
-  <img src="image/download.pngfb1"alt="facebook">
- <img src="image/download.pngtelegram" alt="telegram">
-  <img src="image/download.png twitter" alt="twitter">
-  <img src="image/download.pngyt" alt="you tube">
-</div>
+ 
 
 </div>
 </section>
 </div>
 
 <footer>
-  <p id="rights"> copyright(c)DELANI @2020</p>
+  <p id="rights"> copyright(c)B.PIZERIA @2020</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
