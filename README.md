@@ -17,7 +17,7 @@ Information about the history and cooking tradition of the Pizza Restaurant.
 * Navigate to the B PIZZERIA folder.
 * Open the folder in your editor.
 * Check if it is responsive.
-* 
+
 *****
 
 ## Technologies Used
