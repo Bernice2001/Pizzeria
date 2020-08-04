@@ -1,4 +1,4 @@
-# B PIZERIA!
+# B PIZZERIA!
 This is a repository for my pizza website.
 *****
 ##### AUTHOR: Bernice Maina
