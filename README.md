@@ -3,7 +3,7 @@ This is a repository for my pizza website.
 *****
 ##### AUTHOR: Bernice Maina
 ## Description
-This is a pizza website where a user can order pizza online; select the size, toppings and crust. Each selection has a different amount and the total price is displyed afterwards. The pizza can be delivered or collected. If delivered, the user will be prompted to enter their location..
+This is a pizza website where a user can order pizza online; select the size, toppings and crust. Each selection has a different amount and the total price is displyed afterwards. The pizza can be delivered or collected. If delivered, the user will be prompted to enter their location.
 **********
                 
 ## Setup Instructions
@@ -29,3 +29,4 @@ This web application requires a user to order a pizza. Prompts the user to enter
 ## Project links
 [This is a link for my github page](https://github.com/Bernice2001/Pizzeria)
 
+[Click this link for my project](https://bernice2001.github.io/Pizzeria/)
